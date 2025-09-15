@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+#spider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  top: 40%;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+p {
+  color: #ccc;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff00ff; }
+  to { text-shadow: 0 0 20px #00ffff; }
+}
